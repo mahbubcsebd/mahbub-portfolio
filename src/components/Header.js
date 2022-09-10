@@ -1,19 +1,19 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
+import styles from '../style';
 import DarkModeBtn from './DarkModeBtn';
-import styles from '../style'
 
-export default function NavBar() {
+const Header = () => {
     const [navbar, setNavbar] = useState(false);
 
     return (
         <header>
-            <nav className="w-full bg-slate-100 dark:bg-gray-900 transition duration-1000">
+            <nav className="w-full bg-slate-100 dark:bg-gray-900 transition duration-1000 absolute">
                 <div className={`container w-full mx-auto ${styles.boxWidth}`}>
-                    <div className="flex justify-center items-center">
+                    <div className="flex justify-center items-center py-5 md:py-7">
                         <div className={`justify-between mx-auto pr-10 md:items-center md:flex w-full`}>
                             <div>
-                                <div className="flex items-center justify-between py-3 md:py-5 md:block">
+                                <div className="flex items-center justify-between md:block">
                                     <a href="#">
                                         <h2 className="text-2xl font-bold dark:text-white">Mahbub</h2>
                                     </a>
@@ -88,3 +88,5 @@ export default function NavBar() {
         </header>
     );
 }
+
+export default Header

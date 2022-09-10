@@ -13,7 +13,12 @@ module.exports = {
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
       fontFamily: {
+        lato: ["Lato", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        openSans: ["Open Sans", "sans-serif"],
+        playfairDisplay: ["Playfair Display", "sans-serif"],
+        merriweather: ["Merriweather", "sans-serif"],
       },
       container: {
         padding: {
