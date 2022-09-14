@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import { useState } from "react";
+import { useState } from 'react';
 import styles from '../style';
 import DarkModeBtn from './DarkModeBtn';
 
@@ -8,14 +7,18 @@ const Header = () => {
 
     return (
         <header>
-            <nav className="w-full bg-slate-100 dark:bg-gray-900 transition duration-1000 absolute">
-                <div className={`container w-full mx-auto ${styles.boxWidth}`}>
+            <nav className="w-full bg-slate-100 dark:bg-gray-900 transition duration-1000">
+                <div className={`${styles.container}`}>
                     <div className="flex justify-center items-center py-5 md:py-7">
-                        <div className={`justify-between mx-auto pr-10 md:items-center md:flex w-full`}>
+                        <div
+                            className={`justify-between mx-auto pr-10 md:items-center md:flex w-full`}
+                        >
                             <div>
                                 <div className="flex items-center justify-between md:block">
                                     <a href="#">
-                                        <h2 className="text-2xl font-bold dark:text-white">Mahbub</h2>
+                                        <h2 className="text-2xl font-bold dark:text-white">
+                                            Mahbub
+                                        </h2>
                                     </a>
                                     <div className="md:hidden">
                                         <button
@@ -58,35 +61,45 @@ const Header = () => {
                             <div>
                                 <div
                                     className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                                        navbar ? "block" : "hidden"
+                                        navbar ? 'block' : 'hidden'
                                     }`}
                                 >
                                     <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                                         <li className="">
-                                            <a href="#about" className={`${styles.navLink}`}>About</a>
+                                            <a href="#about" className={`${styles.navLink}`}>
+                                                About
+                                            </a>
                                         </li>
                                         <li className="">
-                                            <a href="#skill" className={`${styles.navLink}`}>Skill</a>
+                                            <a href="#skill" className={`${styles.navLink}`}>
+                                                Skill
+                                            </a>
                                         </li>
                                         <li className="">
-                                            <a href="#portfolio" className={`${styles.navLink}`}>Portfolio</a>
+                                            <a href="#portfolio" className={`${styles.navLink}`}>
+                                                Portfolio
+                                            </a>
                                         </li>
                                         <li className="">
-                                            <a href="#contact" className={`${styles.navLink}`}>Contact</a>
+                                            <a href="#contact" className={`${styles.navLink}`}>
+                                                Contact
+                                            </a>
                                         </li>
                                         <li className="">
-                                            <a href="#" className={`${styles.navLink}`}>Resume</a>
+                                            <a href="#" className={`${styles.navLink}`}>
+                                                Resume
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <DarkModeBtn/>
+                        <DarkModeBtn />
                     </div>
                 </div>
             </nav>
         </header>
     );
-}
+};
 
-export default Header
+export default Header;

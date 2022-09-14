@@ -1,7 +1,6 @@
-import BtnPrimary from "./BtnPrimary";
-import BtnSecondary from "./BtnSecondary";
+/* eslint-disable prettier/prettier */
+import BtnPrimary from './BtnPrimary';
+import BtnSecondary from './BtnSecondary';
 
-export{
-    BtnPrimary,
-    BtnSecondary
-}
+export { BtnPrimary, BtnSecondary };
+ 
