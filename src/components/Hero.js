@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import Typewriter from 'typewriter-effect/dist/core';
-import { heroProfile, heroProfileBg, right } from '../assets';
+import { heroProfile, mahbubResume, right } from '../assets';
 import styles from '../style';
 import { BtnPrimary, BtnSecondary } from './buttons';
 
 const Hero = () => {
     useEffect(() => {
         new Typewriter('#typewriter', {
-            strings: ['Web Developer', 'Frond End Developer', 'React Js Developer'],
+            strings: ['Web Developer', 'Frond End Developer', 'React Js Developer', 'Programmer'],
             autoStart: true,
             loop: true,
             delay: 75,
@@ -19,29 +19,31 @@ const Hero = () => {
             <div className={`hero-area min-h-screen ${styles.flexCenter}`}>
                 <div className={`${styles.container}`}>
                     <div className="hero-content grid grid-cols-12 gap-4">
-                        <div className="hero-text col-span-8 grid content-center">
-                            <p className="text-sky-500 tracking-wide dark:text-white text-[20px]  leading-3 mb-2">
-                                Hello! I am
+                        <div className="hero-text order-2 sm:order-1 col-span-12 sm:col-span-7 grid content-center">
+                            <p className="font-bold tracking-wide  dark:text-white text-[22px] leading-3 mb-2">
+                                Hello! <span className="text-primary">I am</span>
                             </p>
-                            <h1 className={`${styles.heading1} mb-2`}>Mahbubur Rahman</h1>
-                            <div className="work-box flex items-center mb-8">
+                            <h1 className={`${styles.heading1} sm:mb-2`}>
+                                Mahbubur{' '}
+                                <span className="text-[#212529] dark:text-white">Rahman</span>
+                            </h1>
+                            <div className="work-box flex items-center mb-4 md:mb-8">
                                 <img className="w-[40px] h-[40px] mr-4" src={right} alt="" />
                                 <h3
                                     id="typewriter"
-                                    className="capitalize text-sky-500 dark:text-white text-[28px] tracking-wide font-semibold"
+                                    className="capitalize text-primary text-[22px] xs:text-[28px] tracking-wide font-semibold"
                                 ></h3>
                             </div>
                             <div className="">
-                                <BtnPrimary btnText="Get resume" btnLink="#" />
+                                <BtnPrimary btnText="Get resume" btnLink={mahbubResume} />
                                 <BtnSecondary btnText="About me" btnLink="#about" />
                             </div>
                         </div>
-                        <div className="col-span-4 relative z-40">
-                            <img src={heroProfile} alt="hero-profile" className="relative z-50" />
+                        <div className="col-span-12 sm:col-span-5 order-1 sm:order-2 mx-auto mb-5">
                             <img
-                                src={heroProfileBg}
+                                src={heroProfile}
                                 alt="hero-profile"
-                                className="absolute bottom-0 z-[0]"
+                                className="h-auto md:h-[420px]"
                             />
                         </div>
                     </div>

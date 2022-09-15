@@ -6,7 +6,7 @@ function DarkModeBtn() {
     return (
         <div className="">
             <span
-                className="w-8 h-8 bg-sky-500 dark:bg-sky-400 rounded-full shadow-lg cursor-pointer text-white flex items-center justify-center"
+                className="w-8 h-8 bg-primary dark:bg-primary rounded-full shadow-lg cursor-pointer text-white flex items-center justify-center"
                 onClick={() => setTheme(colorTheme)}
             >
                 {colorTheme === 'light' ? (

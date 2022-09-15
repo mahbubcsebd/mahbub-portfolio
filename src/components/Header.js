@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { mahbubResume } from '../assets';
 import styles from '../style';
 import DarkModeBtn from './DarkModeBtn';
 
@@ -6,8 +7,8 @@ const Header = () => {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <header>
-            <nav className="w-full bg-slate-100 dark:bg-gray-900 transition duration-1000">
+        <header className="w-full relative">
+            <nav className="w-full fixed top-0 bg-white dark:bg-gray-900 transition duration-1000">
                 <div className={`${styles.container}`}>
                     <div className="flex justify-center items-center py-5 md:py-7">
                         <div
@@ -16,9 +17,7 @@ const Header = () => {
                             <div>
                                 <div className="flex items-center justify-between md:block">
                                     <a href="#">
-                                        <h2 className="text-2xl font-bold dark:text-white">
-                                            Mahbub
-                                        </h2>
+                                        <h2 className="text-2xl font-bold text-primary">Mahbub</h2>
                                     </a>
                                     <div className="md:hidden">
                                         <button
@@ -86,7 +85,10 @@ const Header = () => {
                                             </a>
                                         </li>
                                         <li className="">
-                                            <a href="#" className={`${styles.navLink}`}>
+                                            <a
+                                                href={mahbubResume}
+                                                className={`${styles.navLink} bg-primary px-4 py-2 rounded-sm text-white hover:text-white dark:hover:text-white`}
+                                            >
                                                 Resume
                                             </a>
                                         </li>

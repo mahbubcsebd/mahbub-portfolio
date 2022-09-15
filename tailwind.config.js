@@ -6,7 +6,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                primary: '#00040f',
+                primary: '#00aa55',
                 secondary: '#00f6ff',
                 dimWhite: 'rgba(255, 255, 255, 0.7)',
                 dimBlue: 'rgba(9, 151, 124, 0.1)',
@@ -18,6 +18,7 @@ module.exports = {
                 openSans: ['Open Sans', 'sans-serif'],
                 playfairDisplay: ['Playfair Display', 'sans-serif'],
                 merriweather: ['Merriweather', 'sans-serif'],
+                nunito: ['Nunito', 'sans-serif'],
             },
             container: {
                 padding: {

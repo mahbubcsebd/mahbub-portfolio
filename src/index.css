@@ -31,7 +31,8 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  color: #212529;
 }
 
 h1,
@@ -40,23 +41,33 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', sans-serif;
-}
-
-.swiper-wrapper {
-  padding-bottom: 50px;
-}
-
-.swiper-container-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: 0px !important;
+  font-family: 'Nunito', sans-serif;
 }
 
 .scroll-to-top {
-  background-color: #007aff;
+  background-color: #00aa55;
   fill: #fff !important;
 }
 .scroll-to-top svg {
   fill: #fff !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00aa55;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

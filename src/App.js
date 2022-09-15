@@ -3,7 +3,7 @@ import LoveToDo from './components/LoveToDo';
 
 function App() {
     return (
-        <div className="App bg-slate-300 dark:bg-gray-900 transition duration-1000">
+        <div className="App bg-white dark:bg-gray-900 transition duration-1000">
             <Header />
             <Hero />
             <About />

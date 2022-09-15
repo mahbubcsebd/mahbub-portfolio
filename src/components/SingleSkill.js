@@ -3,13 +3,15 @@ import React from 'react';
 const SingleSkill = (props) => {
     const { title, percent, width } = props;
     return (
-        <div className="skill-box bg-sky-400 px-5 py-4 rounded-lg mb-4">
-            <div className="skill-top flex justify-between items-center  mb-2">
-                <h3 className="heading-3 capitalize text-[24px] font-semibold">{title}</h3>
-                <p>{percent}</p>
+        <div className="skill-box bg-[#1d293a] px-5 py-4 rounded-lg mb-5">
+            <div className="skill-top flex justify-between items-center mb-5">
+                <h3 className="capitalize text-[24px] text-white font-bold">{title}</h3>
+                <p className="p-1 text-[18px] font-semibold bg-primary text-white rounded-sm">
+                    {percent}
+                </p>
             </div>
-            <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-                <div className={`bg-purple-600 h-2.5 rounded-full ${width}`}></div>
+            <div className="w-full rounded-full h-2.5 bg-gray-700">
+                <div className={`bg-primary h-2.5 rounded-full ${width}`}></div>
             </div>
         </div>
     );

@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-import { heroProfile } from '../assets';
+import { heroProfile, mahbubResume } from '../assets';
 import styles from '../style';
-import { BtnPrimary, BtnSecondary } from './buttons';
+import { BtnPrimary } from './buttons';
 
 function About() {
     return (
@@ -10,14 +10,18 @@ function About() {
             <div className="about-area">
                 <div className={`${styles.container}`}>
                     <div className="about-content grid grid-cols-12 gap-4 content-center items-center">
-                        <div className="col-span-6 content-center">
+                        <div className="col-span-12 md:col-span-6 content-center">
                             <div className="about-img max-w-[350px]">
                                 <img src={heroProfile} alt="about-img" />
                             </div>
                         </div>
-                        <div className="col-span-6 content-center">
+                        <div className="col-span-12 md:col-span-6 content-center">
                             <div className="about-text">
-                                <h2 className={`${styles.heading3}`}>Let's Introduce Myself</h2>
+                                <h2
+                                    className={`${styles.heading3} capitalize dark:text-primary mb-3 text-primary`}
+                                >
+                                    Let's Introduce Myself
+                                </h2>
                                 <p className={`${styles.paragraph} mb-10`}>
                                     I am a professional Front End Web Developer. I'm very passionate
                                     and dedicated to my work. With 1.5 years of experience as a
@@ -29,59 +33,69 @@ function About() {
                                     more polished and learn new technologies. I love programming as
                                     It's my passion.
                                 </p>
-                                <div className="grid grid-cols-12 gap-2 justify-between mb-4">
-                                    <div className="col-span-6">
+                                <div className="grid grid-cols-12 gap-4 justify-between mb-4">
+                                    <div className="col-span-12 ss:col-span-6">
                                         <ul>
-                                            <li className={`${styles.paragraph}`}>
+                                            <li className={`${styles.paragraph} sm:text-[16px]`}>
                                                 <span className="inline-block font-semibold mr-1">
                                                     Residence
                                                 </span>
                                                 : Bangladesh
                                             </li>
-                                            <li className={`${styles.paragraph}`}>
+                                            <li className={`${styles.paragraph} sm:text-[16px]`}>
                                                 <span className="inline-block font-semibold mr-1">
                                                     City
                                                 </span>
                                                 : Dhaka
                                             </li>
-                                            <li>
-                                                <ul className="social-box flex>
+                                            <li className="mt-6">
+                                                <ul className="social-box flex">
                                                     <li>
                                                         <a
-                                                            href="#"
-                                                            className="w-[40px] h-[40px] bg-sky-500 leading-[40px] flex justify-center items-center text-[20px] rounded-sm text-white"
+                                                            target="_blank"
+                                                            href="https://www.facebook.com/mahbub624"
+                                                            className="w-[40px] h-[40px] mr-2 bg-primary leading-[40px] flex justify-center items-center text-[20px] rounded-sm text-white"
+                                                            rel="noreferrer"
                                                         >
                                                             <FaFacebookF />
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="#"
-                                                            className="w-[40px] h-[40px] bg-sky-500 leading-[40px] flex justify-center items-center text-[20px] rounded-sm text-white"
+                                                            target="_blank"
+                                                            href="https://www.linkedin.com/"
+                                                            className="w-[40px] h-[40px] mr-2 bg-primary leading-[40px] flex justify-center items-center text-[20px] rounded-sm text-white"
+                                                            rel="noreferrer"
                                                         >
                                                             <FaLinkedinIn />
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="#"
-                                                            className="w-[40px] h-[40px] bg-sky-500 leading-[40px] flex justify-center items-center text-[20px] rounded-sm text-white"
+                                                            target="_blank"
+                                                            href="https://twitter.com/"
+                                                            className="w-[40px] h-[40px] mr-2 bg-primary leading-[40px] flex justify-center items-center text-[20px] rounded-sm text-white"
+                                                            rel="noreferrer"
                                                         >
                                                             <FaTwitter />
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="#"
-                                                            className="w-[40px] h-[40px] bg-sky-500 leading-[40px] flex justify-center items-center text-[20px] rounded-sm text-white"
+                                                            target="_blank"
+                                                            href="https://www.instagram.com/mahbub.6242/"
+                                                            className="w-[40px] h-[40px] mr-2 bg-primary leading-[40px] flex justify-center items-center text-[20px] rounded-sm text-white"
+                                                            rel="noreferrer"
                                                         >
                                                             <FaInstagram />
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a
-                                                            href="#"
-                                                            className="w-[40px] h-[40px] bg-sky-500 leading-[40px] flex justify-center items-center text-[20px] rounded-sm text-white"
+                                                            target="_blank"
+                                                            href="https://github.com/mahbubcsebd"
+                                                            className="w-[40px] h-[40px] bg-primary leading-[40px] flex justify-center items-center text-[20px] rounded-sm text-white"
+                                                            rel="noreferrer"
                                                         >
                                                             <FaGithub />
                                                         </a>
@@ -90,26 +104,28 @@ function About() {
                                             </li>
                                         </ul>
                                     </div>
-                                    <div className="col-span-6">
+                                    <div className="col-span-12 ss:col-span-6">
                                         <ul>
-                                            <li className={`${styles.paragraph}`}>
+                                            <li className={`${styles.paragraph} sm:text-[16px]`}>
                                                 <span className="inline-block font-semibold mr-1">
                                                     WhatsApp
                                                 </span>
                                                 : +8801862179418
                                             </li>
-                                            <li className={`${styles.paragraph}`}>
+                                            <li className={`${styles.paragraph} sm:text-[16px]`}>
                                                 <span className="inline-block font-semibold mr-1">
                                                     Mail
                                                 </span>
                                                 : mahbub.cse.me@gmail.com
                                             </li>
+                                            <li className="mt-5">
+                                                <BtnPrimary
+                                                    btnText="Get resume"
+                                                    btnLink={mahbubResume}
+                                                />
+                                            </li>
                                         </ul>
                                     </div>
-                                </div>
-                                <div className="">
-                                    <BtnPrimary btnText="Get resume" btnLink="#" />
-                                    <BtnSecondary btnText="My Skills" btnLink="#skill" />
                                 </div>
                             </div>
                         </div>

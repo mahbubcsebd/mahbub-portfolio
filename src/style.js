@@ -1,23 +1,23 @@
 const styles = {
     boxWidth: 'xl:max-w-[1200px] w-full',
-    section: 'py-[80px]',
-    container: 'container w-full mx-auto xl:max-w-[1200px] w-full',
+    section: 'py-[20px] md:py-[30px] md:py-[80px]',
+    container: 'container w-full mx-auto md:max-w-[1200px] xl:max-w-[1300px] w-full',
 
     heading1:
-        'font-lato font-bold xs:text-[72px] text-[40px] tracking-wide dark:text-sky-500 xs:leading-[86.8px] leading-[66.8px] w-full',
+        'font-nunito font-bold text-[35px] xs:text-[40px] ss:text-[55px] sm:text-[43px]  md:text-[62px] lg:text-[67px] tracking-wide text-primary w-full',
     heading2:
-        'font-lato font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full',
+        'font-nunito font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full',
 
-    heading3:
-        'font-lato font-semibold xs:text-[32px] text-[26px] dark:text-white xs:leading-[76.8px] leading-[66.8px] w-full',
+    heading3: 'font-nunito font-semibold xs:text-[28px] text-[26px] dark:text-white w-full',
 
-    paragraph: 'text-[16px] font-normal dark:text-white leading-[30.8px]',
+    paragraph:
+        'text-[16px] sm:text-[18px] font-normal dark:text-white tracking-wide leading-[35px]',
 
     flexCenter: 'flex justify-center items-center',
     flexStart: 'flex justify-center items-start',
 
     navLink:
-        'hover:text-sky-500 dark:hover:text-sky-400 uppercase font-medium text-[16px] upercase dark:text-white',
+        'hover:text-primary dark:hover:text-primary font-semibold uppercase text-[16px] upercase dark:text-white',
     link: 'text-[16px] font-normal text-slate-500',
 
     paddingX: 'sm:px-16 px-6',

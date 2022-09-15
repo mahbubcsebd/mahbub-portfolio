@@ -5,7 +5,7 @@ import SingleSkill from './SingleSkill';
 
 const Skill = () => {
     return (
-        <section id="skill" className="skill">
+        <section id="skill" className={`skill ${styles.section}`}>
             <Tabs>
                 <div className="skill-area">
                     <div className={`${styles.container}`}>
@@ -15,7 +15,7 @@ const Skill = () => {
                                     <div className="skill-button-box mb-8">
                                         <TabList className="flex justify-start items-center">
                                             {['Web', 'Programming', 'Tools'].map((tabTitle) => (
-                                                <Tab className="dark:text-white text-[20px] text-sky-500 border-2 border-sky-500 cursor-pointer px-5 rounded-md py-1 mr-2">
+                                                <Tab className="dark:text-white sm:text-[20px] text-primary border-2 border-primary cursor-pointer px-5 rounded-md py-1 mr-2">
                                                     {tabTitle}
                                                 </Tab>
                                             ))}
@@ -24,7 +24,7 @@ const Skill = () => {
 
                                     <TabPanel>
                                         <div className="grid grid-cols-12 gap-4 justify-between">
-                                            <div className="col-span-6">
+                                            <div className="col-span-12 ss:col-span-6">
                                                 <SingleSkill
                                                     title="React"
                                                     width="w-[80%]"
@@ -46,7 +46,7 @@ const Skill = () => {
                                                     percent="80%"
                                                 />
                                             </div>
-                                            <div className="col-span-6">
+                                            <div className="col-span-12 ss:col-span-6">
                                                 <SingleSkill
                                                     title="Getsby"
                                                     width="w-[80%]"
@@ -67,7 +67,7 @@ const Skill = () => {
                                     </TabPanel>
                                     <TabPanel>
                                         <div className="grid grid-cols-12 gap-4 justify-between">
-                                            <div className="col-span-6">
+                                            <div className="col-span-12 ss:col-span-6">
                                                 <SingleSkill
                                                     title="JavaScript"
                                                     width="w-[80%]"
@@ -84,7 +84,7 @@ const Skill = () => {
                                                     percent="80%"
                                                 />
                                             </div>
-                                            <div className="col-span-6">
+                                            <div className="col-span-12 ss:col-span-6">
                                                 <SingleSkill
                                                     title="C"
                                                     width="w-[80%]"
@@ -100,7 +100,7 @@ const Skill = () => {
                                     </TabPanel>
                                     <TabPanel>
                                         <div className="grid grid-cols-12 gap-4 justify-between">
-                                            <div className="col-span-6">
+                                            <div className="col-span-12 ss:col-span-6">
                                                 <SingleSkill
                                                     title="React"
                                                     width="w-[80%]"
@@ -122,7 +122,7 @@ const Skill = () => {
                                                     percent="80%"
                                                 />
                                             </div>
-                                            <div className="col-span-6">
+                                            <div className="col-span-12 ss:col-span-6">
                                                 <SingleSkill
                                                     title="Getsby"
                                                     width="w-[80%]"
