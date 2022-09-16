@@ -12,17 +12,21 @@ const Portfolio = () => {
                                 key={id}
                                 className="single-portfolio col-span-12 sm:col-span-6 md:col-span-4 rounded-md overflow-hidden shadow-xl mb-2 bg-[#1d293a]"
                             >
-                                <div className="si-img">
-                                    <img src={item.img} alt="" />
+                                <div className="si-img h-[200px]">
+                                    <img className="h-full" src={item.img} alt="" />
                                 </div>
                                 <div className="si-content px-3 py-5">
                                     <a
+                                        target="_blank"
                                         className={`text-white font-semibold text-[28px] capitalize mb-2 inline-block hover:text-primary dark:hover:text-primary`}
-                                        href="#"
+                                        href={item.link}
+                                        rel="noreferrer"
                                     >
                                         {item.title}
                                     </a>
-                                    <p className={`si-desc mb-4 ${styles.paragraph} text-white`}>
+                                    <p
+                                        className={`si-desc mb-4 min-h-[140px] ${styles.paragraph} text-white text-[16px] dark:text-[16px]`}
+                                    >
                                         {item.text}
                                     </p>
                                     <ul className="si-tag-box flex items-center">

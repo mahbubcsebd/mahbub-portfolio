@@ -7,7 +7,7 @@ const Header = () => {
     const [navbar, setNavbar] = useState(false);
 
     return (
-        <header className="w-full relative">
+        <header className="w-full relative z-[999]">
             <nav className="w-full fixed top-0 bg-white dark:bg-gray-900 transition duration-1000">
                 <div className={`${styles.container}`}>
                     <div className="flex justify-center items-center py-5 md:py-7">
@@ -63,7 +63,7 @@ const Header = () => {
                                         navbar ? 'block' : 'hidden'
                                     }`}
                                 >
-                                    <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                                    <ul className="items-center justify-center space-y-5 sm:space-y-8 md:flex md:space-x-6 md:space-y-0">
                                         <li className="">
                                             <a href="#about" className={`${styles.navLink}`}>
                                                 About

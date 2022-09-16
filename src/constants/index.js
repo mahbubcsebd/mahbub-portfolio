@@ -1,5 +1,16 @@
+/* eslint-disable prettier/prettier */
 import { MdOutlineLocationOn, MdOutlineMail, MdPhone } from 'react-icons/md';
-import { CameraImg, HikingImg, MovieImg, portfolio1, TravelImg } from '../assets';
+import {
+    berfey,
+    CameraImg,
+    eprovent,
+    HikingImg,
+    hoobank,
+    luminux,
+    MovieImg,
+    shuttr,
+    TravelImg
+} from '../assets';
 
 export const contacts = [
     {
@@ -22,38 +33,43 @@ export const contacts = [
 export const portfolioList = [
     {
         id: 'port-1',
-        img: portfolio1,
-        title: 'Mahbub',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad delectus id, porro quod itaque!',
-        tags: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
+        img: berfey,
+        title: 'Berfey',
+        text: 'Berfey- Beauty & Cosmetics HTML5 Template - Health & Beauty Retail Screenshots Berfey.(ThemeForest Approved)',
+        tags: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'jQuery'],
+        link: 'https://themeforest.net/item/berfey-beauty-cosmetics-ecommerce-html5-template/36947322?s_rank=1',
     },
     {
         id: 'port-2',
-        img: portfolio1,
-        title: 'Mahbub',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad delectus id, porro quod itaque!',
-        tags: ['HTML', 'CSS', 'Bootstrap'],
+        img: shuttr,
+        title: 'Shuttr',
+        text: 'Fashion eCommerce HTML5 Template. It has been created following modern design standards and typography.(ThemeForest Approved)',
+        tags: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'jQuery'],
+        link: 'https://preview.themeforest.net/item/shuttr-fashion-ecommerce-html5-template/full_screen_preview/36448486?_ga=2.162519098.743001122.1663306406-1822753251.1660745201',
     },
     {
         id: 'port-3',
-        img: portfolio1,
-        title: 'Mahbub',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad delectus id, porro quod itaque!',
-        tags: ['HTML', 'CSS', 'Bootstrap'],
+        img: hoobank,
+        title: 'HooBank',
+        text: 'HooBank - is a Payment method React template which is made by modern TailwindCSS Framework',
+        tags: ['React', 'Tailwind', 'JavaScript'],
+        link: 'https://reacthoobank.netlify.app/',
     },
     {
         id: 'port-4',
-        img: portfolio1,
-        title: 'Mahbub',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad delectus id, porro quod itaque!',
-        tags: ['HTML', 'CSS', 'Bootstrap'],
+        img: eprovent,
+        title: 'Eprovent',
+        text: 'Eprovent - Creative Event Conference HTML5 Template. This is a Creative Event Conference HTML5 Template which is Modern, Clean, Minimal, Professional, Creative and presentable',
+        tags: ['HTML', 'CSS', 'Bootstrap', 'jQuery', 'JavaScript'],
+        link: 'https://deft-moxie-b90549.netlify.app/',
     },
     {
         id: 'port-5',
-        img: portfolio1,
-        title: 'Mahbub',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ad delectus id, porro quod itaque!',
-        tags: ['HTML', 'CSS', 'Bootstrap'],
+        img: luminux,
+        title: 'Luminux',
+        text: 'Luminux - is a Creative Digital Agency HTML5 template which is Modern, Clean, Minimal, Professional, Creative and presentable.',
+        tags: ['HTML', 'CSS', 'Bootstrap', 'jQuery', 'JavaScript'],
+        link: 'https://brilliant-hotteok-0481d2.netlify.app/',
     },
 ];
 
