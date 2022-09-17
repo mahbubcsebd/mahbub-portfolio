@@ -52,6 +52,10 @@ h6 {
   fill: #fff !important;
 }
 
+.react-tabs__tab--selected {
+  background: #00aa55;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

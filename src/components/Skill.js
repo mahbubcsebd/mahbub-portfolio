@@ -15,7 +15,7 @@ const Skill = () => {
                                     <div className="skill-button-box mb-8">
                                         <TabList className="flex justify-start items-center">
                                             {['Web', 'Programming', 'Tools'].map((tabTitle) => (
-                                                <Tab className="dark:text-white sm:text-[20px] text-primary border-2 border-primary cursor-pointer px-5 rounded-md py-1 mr-2">
+                                                <Tab className="dark:text-white sm:text-[20px] text-primary border-2 border-primary cursor-pointer px-5 rounded-md py-1 mr-2 outline-none">
                                                     {tabTitle}
                                                 </Tab>
                                             ))}

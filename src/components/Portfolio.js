@@ -13,7 +13,9 @@ const Portfolio = () => {
                                 className="single-portfolio col-span-12 sm:col-span-6 md:col-span-4 rounded-md overflow-hidden shadow-xl mb-2 bg-[#1d293a]"
                             >
                                 <div className="si-img h-[200px]">
-                                    <img className="h-full" src={item.img} alt="" />
+                                    <a target="_blank" href={item.link} rel="noreferrer">
+                                        <img className="h-full" src={item.img} alt="" />
+                                    </a>
                                 </div>
                                 <div className="si-content px-3 py-5">
                                     <a
