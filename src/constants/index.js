@@ -59,7 +59,7 @@ export const portfolioList = [
         id: 'port-4',
         img: eprovent,
         title: 'Eprovent',
-        text: 'Eprovent - Creative Event Conference HTML5 Template. This is a Creative Event Conference HTML5 Template which is Modern, Clean, Minimal, Professional, Creative and presentable',
+        text: 'Creative Event Conference HTML5 Template. This is a Creative Event Conference Template which is Modern, Minimal, Professional and presentable',
         tags: ['HTML', 'CSS', 'Bootstrap', 'jQuery', 'JavaScript'],
         link: 'https://deft-moxie-b90549.netlify.app/',
     },

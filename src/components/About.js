@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { heroProfile, mahbubResume } from '../assets';
+import SectionTitle from './SectionTitle';
 import styles from '../style';
 import { BtnPrimary } from './buttons';
 
@@ -9,6 +10,7 @@ function About() {
         <section id="about" className={`about ${styles.section}`}>
             <div className="about-area">
                 <div className={`${styles.container}`}>
+                    <SectionTitle title="About Me" />
                     <div className="about-content grid grid-cols-12 gap-4 content-center items-center">
                         <div className="col-span-12 md:col-span-6 content-center">
                             <div className="about-img max-w-[350px]">

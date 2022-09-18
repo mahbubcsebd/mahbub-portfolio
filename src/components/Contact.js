@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { AiOutlineSend } from 'react-icons/ai';
 import { contactImg } from '../assets';
+import SectionTitle from './SectionTitle';
 import styles from '../style';
 
 const Contact = () => {
@@ -24,6 +25,7 @@ const Contact = () => {
         <section id="contact" className={`contact ${styles.section}`}>
             <div className="contact-area">
                 <div className={`${styles.container}`}>
+                    <SectionTitle title="Contact" />
                     <div className="contact-content grid grid-cols-12 justify-between items-center gap-4">
                         <div className="contact-details col-span-12 sm:col-span-6">
                             <img

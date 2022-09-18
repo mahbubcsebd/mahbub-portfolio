@@ -1,12 +1,12 @@
 const styles = {
     boxWidth: 'xl:max-w-[1200px] w-full',
-    section: 'py-[20px] md:py-[30px] md:py-[80px]',
+    section: 'pb-[20px] md:pb-[30px] md:pb-[80px]',
     container: 'container w-full mx-auto md:max-w-[1200px] xl:max-w-[1300px] w-full',
 
     heading1:
         'font-nunito font-bold text-[35px] xs:text-[40px] ss:text-[55px] sm:text-[43px]  md:text-[62px] lg:text-[67px] tracking-wide text-primary w-full',
     heading2:
-        'font-nunito font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full',
+        'font-nunito text-primary font-semibold ss:text-[48px] xs:text-[40px] text-[35px] xs:leading-[76.8px] leading-[66.8px] w-full',
 
     heading3: 'font-nunito font-semibold xs:text-[28px] text-[26px] dark:text-white w-full',
 

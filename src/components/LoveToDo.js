@@ -1,4 +1,5 @@
 import { love } from '../constants';
+import SectionTitle from './SectionTitle';
 import styles from '../style';
 
 const LoveToDo = () => {
@@ -6,6 +7,7 @@ const LoveToDo = () => {
         <section id="love-to-do" className={`love-to-do ${styles.section}`}>
             <div className="love-to-do-area">
                 <div className={`${styles.container}`}>
+                    <SectionTitle title="Love To Do" />
                     <div className="grid grid-cols-12 gap-4 justify-between">
                         {love.map((item) => (
                             <div key={item.id} className="col-span-12 xs:col-span-6 md:col-span-3">

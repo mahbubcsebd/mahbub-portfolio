@@ -47,6 +47,7 @@ h6 {
 .scroll-to-top {
   background-color: #00aa55 !important;
   fill: #fff !important;
+  right: 20px !important;
 }
 .scroll-to-top svg {
   fill: #fff !important;
@@ -54,6 +55,11 @@ h6 {
 
 .react-tabs__tab--selected {
   background: #00aa55;
+  color: #fff;
+}
+
+.single-portfolio:hover .portfolio-img {
+  transform: scale(1.1);
 }
 
 /* width */
@@ -74,4 +80,15 @@ h6 {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+@media screen and (max-width: 480px) {
+  .scroll-to-top {
+    height: 30px;
+    width: 30px;
+  }
+
+  .scroll-to-top svg {
+    height: 20px;
+  }
 }

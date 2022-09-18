@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-key */
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
+import SectionTitle from './SectionTitle';
 import styles from '../style';
 import SingleSkill from './SingleSkill';
 
@@ -9,6 +10,7 @@ const Skill = () => {
             <Tabs>
                 <div className="skill-area">
                     <div className={`${styles.container}`}>
+                        <SectionTitle title="Skills" />
                         <div className="about-content grid grid-cols-12 gap-4 content-center items-center">
                             <div className="col-span-12 content-center">
                                 <div className="skills-box">
