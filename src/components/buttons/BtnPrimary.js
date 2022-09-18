@@ -3,7 +3,7 @@ function BtnPrimary(props) {
     return (
         <a
             href={btnLink}
-            className="text-[18px] border-primary border-2 text-white px-6 py-2 inline-block capitalize bg-primary mr-4"
+            className="text-[18px] border-primary border-2 text-white px-6 py-2 inline-block capitalize bg-primary mr-4 rounded-md"
         >
             {btnText}
         </a>

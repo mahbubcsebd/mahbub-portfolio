@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-key */
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
-import SectionTitle from './SectionTitle';
 import styles from '../style';
+import SectionTitle from './SectionTitle';
 import SingleSkill from './SingleSkill';
 
 const Skill = () => {
@@ -29,38 +29,33 @@ const Skill = () => {
                                             <div className="col-span-12 ss:col-span-6">
                                                 <SingleSkill
                                                     title="React"
-                                                    width="w-[80%]"
-                                                    percent="80%"
+                                                    width="w-[60%]"
+                                                    percent="60%"
                                                 />
                                                 <SingleSkill
-                                                    title="Next.JS"
-                                                    width="w-[80%]"
-                                                    percent="80%"
+                                                    title="HTML"
+                                                    width="w-[98%]"
+                                                    percent="98%"
                                                 />
                                                 <SingleSkill
-                                                    title="ExpressJS"
-                                                    width="w-[80%]"
-                                                    percent="80%"
-                                                />
-                                                <SingleSkill
-                                                    title="MySQL"
-                                                    width="w-[80%]"
-                                                    percent="80%"
+                                                    title="CSS"
+                                                    width="w-[95%]"
+                                                    percent="95%"
                                                 />
                                             </div>
                                             <div className="col-span-12 ss:col-span-6">
                                                 <SingleSkill
-                                                    title="Getsby"
-                                                    width="w-[80%]"
-                                                    percent="80%"
+                                                    title="Bootstrap"
+                                                    width="w-[95%]"
+                                                    percent="95%"
                                                 />
                                                 <SingleSkill
-                                                    title="NodeJS"
-                                                    width="w-[80%]"
-                                                    percent="80%"
+                                                    title="Material UI"
+                                                    width="w-[70%]"
+                                                    percent="70%"
                                                 />
                                                 <SingleSkill
-                                                    title="MongoDB"
+                                                    title="Tailwind"
                                                     width="w-[80%]"
                                                     percent="80%"
                                                 />
@@ -72,30 +67,20 @@ const Skill = () => {
                                             <div className="col-span-12 ss:col-span-6">
                                                 <SingleSkill
                                                     title="JavaScript"
-                                                    width="w-[80%]"
-                                                    percent="80%"
+                                                    width="w-[60%]"
+                                                    percent="60%"
                                                 />
                                                 <SingleSkill
-                                                    title="C++"
-                                                    width="w-[80%]"
-                                                    percent="80%"
-                                                />
-                                                <SingleSkill
-                                                    title="Java"
-                                                    width="w-[80%]"
-                                                    percent="80%"
+                                                    title="jQuery"
+                                                    width="w-[70%]"
+                                                    percent="70%"
                                                 />
                                             </div>
                                             <div className="col-span-12 ss:col-span-6">
                                                 <SingleSkill
                                                     title="C"
-                                                    width="w-[80%]"
-                                                    percent="80%"
-                                                />
-                                                <SingleSkill
-                                                    title="Python"
-                                                    width="w-[80%]"
-                                                    percent="80%"
+                                                    width="w-[70%]"
+                                                    percent="70%"
                                                 />
                                             </div>
                                         </div>
@@ -104,39 +89,19 @@ const Skill = () => {
                                         <div className="grid grid-cols-12 gap-4 justify-between">
                                             <div className="col-span-12 ss:col-span-6">
                                                 <SingleSkill
-                                                    title="React"
+                                                    title="Git"
                                                     width="w-[80%]"
                                                     percent="80%"
                                                 />
                                                 <SingleSkill
-                                                    title="Next.JS"
-                                                    width="w-[80%]"
-                                                    percent="80%"
-                                                />
-                                                <SingleSkill
-                                                    title="ExpressJS"
-                                                    width="w-[80%]"
-                                                    percent="80%"
-                                                />
-                                                <SingleSkill
-                                                    title="MySQL"
-                                                    width="w-[80%]"
-                                                    percent="80%"
+                                                    title="Photoshop"
+                                                    width="w-[30%]"
+                                                    percent="30%"
                                                 />
                                             </div>
                                             <div className="col-span-12 ss:col-span-6">
                                                 <SingleSkill
-                                                    title="Getsby"
-                                                    width="w-[80%]"
-                                                    percent="80%"
-                                                />
-                                                <SingleSkill
-                                                    title="NodeJS"
-                                                    width="w-[80%]"
-                                                    percent="80%"
-                                                />
-                                                <SingleSkill
-                                                    title="MongoDB"
+                                                    title="Visual Studio"
                                                     width="w-[80%]"
                                                     percent="80%"
                                                 />
