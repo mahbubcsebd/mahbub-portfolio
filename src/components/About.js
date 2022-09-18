@@ -15,7 +15,7 @@ function About() {
                         <div className="col-span-12 md:col-span-6 content-center">
                             <div className="about-img w-full">
                                 <img
-                                    className="sm:w-[82%] sm:h-[535px]"
+                                    className="sm:w-[85%] sm:h-[535px]"
                                     src={AboutImg}
                                     alt="about-img"
                                 />
