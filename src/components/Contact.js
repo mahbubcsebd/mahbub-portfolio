@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import React, { useRef, useState } from 'react';
 import { AiOutlineSend } from 'react-icons/ai';
 import { contactImg } from '../assets';
-import SectionTitle from './SectionTitle';
 import styles from '../style';
+import SectionTitle from './SectionTitle';
 
 const Contact = () => {
     const [name, setName] = useState('');
@@ -20,6 +21,27 @@ const Contact = () => {
     const messageHandler = (e) => {
         e.preventDefault();
         setMessage(e.target.value);
+    };
+
+    //emailjs
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_kh4cjgr', 'template_e0uiz27', form.current, 'Lah0XMBm6ydf3tznZ')
+            .then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+        setName('');
+        setEmail('');
+        setMessage('');
     };
     return (
         <section id="contact" className={`contact ${styles.section}`}>
@@ -41,7 +63,12 @@ const Contact = () => {
                                 >
                                     Get in touch
                                 </h2>
-                                <form id="contact-form" className="contact-form">
+                                <form
+                                    ref={form}
+                                    onSubmit={sendEmail}
+                                    id="contact-form"
+                                    className="contact-form"
+                                >
                                     <div className="input-group mb-6 relative">
                                         <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                                             <svg
@@ -60,6 +87,7 @@ const Contact = () => {
                                             </svg>
                                         </div>
                                         <input
+                                            required
                                             type="text"
                                             id="name"
                                             placeholder="Name"
@@ -88,6 +116,7 @@ const Contact = () => {
                                             </svg>
                                         </div>
                                         <input
+                                            required
                                             type="email"
                                             id="email"
                                             placeholder="Email"
@@ -115,6 +144,7 @@ const Contact = () => {
                                             </svg>
                                         </div>
                                         <textarea
+                                            required
                                             id="message"
                                             rows="6"
                                             placeholder="Your message..."

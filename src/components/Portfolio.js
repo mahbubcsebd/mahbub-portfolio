@@ -1,6 +1,6 @@
 import { portfolioList } from '../constants';
-import SectionTitle from './SectionTitle';
 import styles from '../style';
+import SectionTitle from './SectionTitle';
 
 const Portfolio = () => {
     return (
@@ -14,7 +14,7 @@ const Portfolio = () => {
                                 key={id}
                                 className="single-portfolio col-span-12 sm:col-span-6 md:col-span-4 rounded-md overflow-hidden shadow-xl mb-2 bg-[#1d293a]"
                             >
-                                <div className="si-img h-[200px] ss:h-[250px] sm:h-[200px]">
+                                <div className="si-img h-[200px] ss:h-[250px] sm:h-[200px] overflow-hidden">
                                     <a target="_blank" href={item.link} rel="noreferrer">
                                         <img
                                             className="portfolio-img h-full w-full transition duration-500"
