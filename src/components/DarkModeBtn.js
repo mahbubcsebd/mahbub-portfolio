@@ -4,7 +4,7 @@ import useDarkMode from './useDarkMode';
 function DarkModeBtn() {
     const [colorTheme, setTheme] = useDarkMode();
     return (
-        <div className="">
+        <div className="pt-1 md:pt-0">
             <span
                 className="w-8 h-8 bg-primary dark:bg-primary rounded-full shadow-lg cursor-pointer text-white flex items-center justify-center"
                 onClick={() => setTheme(colorTheme)}
@@ -16,7 +16,7 @@ function DarkModeBtn() {
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="w-5 h-5"
+                        className="w-5 h-5 color-[#fff]"
                     >
                         <path
                             strokeLinecap="round"

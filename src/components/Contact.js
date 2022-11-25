@@ -49,9 +49,9 @@ const Contact = () => {
                 <div className={`${styles.container}`}>
                     <SectionTitle title="Contact" />
                     <div className="contact-content grid grid-cols-12 justify-between items-center gap-4">
-                        <div className="contact-details col-span-12 sm:col-span-6">
+                        <div className="sm:h-[460px] contact-details col-span-12 sm:col-span-6">
                             <img
-                                className="sm:h-[460px] rounded-xl w-full"
+                                className="sm:h-[100%] object-cover rounded-xl w-full"
                                 src={contactImg}
                                 alt="contact-img"
                             />

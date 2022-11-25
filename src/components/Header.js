@@ -10,7 +10,7 @@ const Header = () => {
         <header className="w-full relative z-[999]">
             <nav className="w-full fixed top-0 bg-white dark:bg-gray-900 transition duration-1000">
                 <div className={`${styles.container}`}>
-                    <div className="flex justify-center items-center py-5 md:py-7">
+                    <div className="flex justify-center items-start md:items-center py-5 md:py-7">
                         <div
                             className={`justify-between mx-auto pr-10 md:items-center md:flex w-full`}
                         >
@@ -21,7 +21,7 @@ const Header = () => {
                                     </a>
                                     <div className="md:hidden">
                                         <button
-                                            className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                            className="p-2 text-gray-700 dark:text-white focus:border-0 rounded-md outline-none focus:border-gray-400"
                                             onClick={() => setNavbar(!navbar)}
                                         >
                                             {navbar ? (

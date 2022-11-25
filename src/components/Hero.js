@@ -47,7 +47,7 @@ const Hero = () => {
                             <img
                                 src={heroProfile}
                                 alt="hero-profile"
-                                className="h-auto max-w-[300px] sm:max-w-auto md:h-[420px]"
+                                className="h-auto sm:max-w-auto md:h-[420px]"
                             />
                         </div>
                     </div>
