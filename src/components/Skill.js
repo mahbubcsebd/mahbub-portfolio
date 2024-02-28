@@ -87,15 +87,15 @@ const Skill = () => {
                                             <div className="col-span-12 ss:col-span-6">
                                                 <SingleSkill
                                                     title="JavaScript"
-                                                    width="w-[60%]"
-                                                    percent="60%"
+                                                    width="w-[75%]"
+                                                    percent="75%"
                                                 />
                                             </div>
                                             <div className="col-span-12 ss:col-span-6">
                                                 <SingleSkill
                                                     title="C"
-                                                    width="w-[75%]"
-                                                    percent="75%"
+                                                    width="w-[60%]"
+                                                    percent="60%"
                                                 />
                                             </div>
                                         </div>
