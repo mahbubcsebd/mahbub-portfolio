@@ -7,7 +7,12 @@ import { BtnPrimary, BtnSecondary } from './buttons';
 const Hero = () => {
     useEffect(() => {
         new Typewriter('#typewriter', {
-            strings: ['Web Developer', 'Frond End Developer', 'React Js Developer', 'Programmer'],
+            strings: [
+                'Frond End Developer',
+                'Next Js Developer',
+                'React Js Developer',
+                'Programmer',
+            ],
             autoStart: true,
             loop: true,
             delay: 75,
@@ -15,11 +20,11 @@ const Hero = () => {
     }, []);
 
     return (
-        <section id="hero" className="hero pt-16 sm:pt-0">
+        <section id="hero" className="pt-16 hero sm:pt-0">
             <div className={`hero-area min-h-screen ${styles.flexCenter}`}>
                 <div className={`${styles.container}`}>
-                    <div className="hero-content grid grid-cols-12 gap-4 text-center xs:text-start">
-                        <div className="hero-text order-2 sm:order-1 col-span-12 sm:col-span-7 grid content-center">
+                    <div className="grid grid-cols-12 gap-4 text-center hero-content xs:text-start">
+                        <div className="grid content-center order-2 col-span-12 hero-text sm:order-1 sm:col-span-7">
                             <p className="font-bold tracking-wide  dark:text-white text-[22px] leading-3 mb-2">
                                 Hello! <span className="text-primary">I am</span>
                             </p>
@@ -27,7 +32,7 @@ const Hero = () => {
                                 Mahbubur{' '}
                                 <span className="text-[#212529] dark:text-white">Rahman</span>
                             </h1>
-                            <div className="work-box flex items-center mb-4 md:mb-8">
+                            <div className="flex items-center mb-4 work-box md:mb-8">
                                 <img
                                     className="w-[30px] h-[30px] xs:w-[40px] xs:h-[40px] mr-4"
                                     src={right}
@@ -43,7 +48,7 @@ const Hero = () => {
                                 <BtnSecondary btnText="About me" btnLink="#about" />
                             </div>
                         </div>
-                        <div className="col-span-12 sm:col-span-5 order-1 sm:order-2 mx-auto mb-5">
+                        <div className="order-1 col-span-12 mx-auto mb-5 sm:col-span-5 sm:order-2">
                             <img
                                 src={heroProfile}
                                 alt="hero-profile"
